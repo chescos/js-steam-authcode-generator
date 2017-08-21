@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Steam Mobile Authcode Generator</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/app.css">
+        <meta content="Steam Mobile Authcode Generator" name="description"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="chescos" name="author" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Steam Mobile Authcode Generator</h1>
+                    <p>Split your secret into parts which can be combined back into the original secret using some or all of the parts.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form>
+                      <div class="form-group">
+                        <label for="secret">Secret:</label>
+                        <input type="text" class="form-control" id="secret">
+                      </div>
+                      <button type="button" class="btn btn-default" id="generate">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Result</h2>
+                    <p id="result">-</p>
+                </div>
+            </div>
+            </hr>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sources">
+                        <h2>Sources</h2>
+                        <p>This project is 100% open-source code.</p>
+                        <p><a href="https://github.com/chescos/js-steam-authcode-generator">Project source code</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/selector.js"></script>
+        <script type="text/javascript" src="js/pack.js"></script>
+        <script type="text/javascript" src="js/sha.js"></script>
+        <script type="text/javascript" src="js/generator.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
