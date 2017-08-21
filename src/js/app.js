@@ -21,7 +21,7 @@
         var code = '';
 
         // secret key is too short or does not end with "="
-        if(secret.length > 10 || secret.substr(secret.length - 1) !== '=') {
+        if(secret.length < 10 || secret.substr(secret.length - 1) !== '=') {
             code = 'Invalid secret key';
         }
         else {
